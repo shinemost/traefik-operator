@@ -34,10 +34,15 @@ spec:
           spec:
             description: ServiceSpec defines the desired state of Service
             properties:
-              foo:
+              entrypoint:
                 description: Foo is an example field of Service. Edit service_types.go
                   to remove/update
                 type: string
+              url:
+                type: string
+            required:
+            - entrypoint
+            - url
             type: object
           status:
             description: ServiceStatus defines the observed state of Service

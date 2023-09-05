@@ -1,4 +1,12 @@
 /*
+ * @Author: shinemost supertain147@163.com
+ * @Date: 2023-09-05 00:46:47
+ * @LastEditors: shinemost supertain147@163.com
+ * @LastEditTime: 2023-09-05 22:22:54
+ * @FilePath: /traefik-operator/api/v1/service_types.go
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/*
 Copyright 2023.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +37,8 @@ type ServiceSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Service. Edit service_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Entrypoint string `json:"entrypoint"`
+	URL        string `json:"url"`
 }
 
 // ServiceStatus defines the observed state of Service
